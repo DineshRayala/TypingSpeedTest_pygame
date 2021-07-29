@@ -32,7 +32,7 @@ class Game:
         self.bg = pygame.transform.scale(self.bg, (750, 500))
 
         self.screen = pygame.display.set_mode((self.w, self.h))
-        pygame.display.set_caption('CheetaToise')
+        pygame.display.set_caption('Python')
 
     def draw_text(self, screen, msg, y, fsize, color):
         font = pygame.font.Font(None, fsize)
@@ -150,7 +150,7 @@ class Game:
         #drawing heading
         self.screen.fill((0, 0, 0))
         self.screen.blit(self.bg, (0, 0))
-        msg = "CheetaToise: Typing Speed Test"
+        msg = "Python: Typing Speed Test"
         self.draw_text(self.screen, msg, 60, 60, self.HEAD_C)
 
         # draw the rectangle for input box
